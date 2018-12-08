@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Graduate student in KOREA!, working on deep learning and looking to change the world (at least try)
+Graduate student in KOREA!, working to change the world (at least try)
 
 ### More Information
 
