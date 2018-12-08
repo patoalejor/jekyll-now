@@ -9,7 +9,7 @@ name: Pato
 description: Un Ecuatoriano en el mundo
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/logo.png #https://github.com/patoalejor/patoalejor.github.io/blob/master/images/logo.png
+avatar: /images/logo.png #https://github.com/patoalejor/patoalejor.github.io/blob/master/images/logo.png
 
 #
 # Flags below are optional
