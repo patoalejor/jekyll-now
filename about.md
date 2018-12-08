@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Graduate student in KOREA!, working on deep learning and looking to change the world (at least try)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am from Ecuador. I have a Electronics B.S. and currently studing in [Kyung Hee University](http://bioimage.khu.ac.kr/new/) to finish a PhD in Biomedical Engineering. Working in the lab of Professor [Tae-Seong Kim](http://web.khu.ac.kr/~tskim/),PhD using deep learning techniques. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[patoalejor@gmail.com](mailto:patoalejor@gmail.com)
