@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Graduate student in Korea!, working to change the world (at least try)
+Graduate student in Korea! 
 
 ---
 ### Bio
