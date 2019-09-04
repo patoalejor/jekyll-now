@@ -16,10 +16,18 @@ I am from Ecuador. I have a Electronics B.S. and currently studing in [KHU](http
 
 > **2019**
 
-*"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view."* **SCI** \s\s
-**P. Rivera**, E. Valarezo, M.-T. Choi, T.-S. Kim \s\s
-[paper](https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2019.0532?originator=ietauthorOffprint&identity=489848&timestamp=20200801150531&signature=556b16a4370d8e2d9a825c80c502c005&tinyUrl=http://ietdl.org/t/WRJnPb) \s\s
-*Note: Free access until end of 2019*
+<p>
+<h2>
+    <i>"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view."   
+    <b>SCI</b>
+    </i>
+</h2>
+</h3>
+    <b>P. Rivera </b>, E. Valarezo, M.-T. Choi, T.-S. Kim 
+    <a href=https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2019.0532?originator=ietauthorOffprint&identity=489848&timestamp=20200801150531&signature=556b16a4370d8e2d9a825c80c502c005&tinyUrl=http://ietdl.org/t/WRJnPb>paper</a>
+    <i>Note: Free access until end of 2019</i>
+</h3>
+</p>
 
 > **2018**
 
