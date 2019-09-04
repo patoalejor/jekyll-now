@@ -16,6 +16,8 @@ I am from Ecuador. I have a Electronics B.S. and currently studing in [KHU](http
 
 > **2019**
 
+![alt text][logo]
+
 <p>
     <h3>
         <i>"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view."
@@ -82,3 +84,7 @@ Arcentales A, **Rivera P**, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.
 ### Contact me
 
 [patoalejor@gmail.com](mailto:patoalejor@gmail.com)
+
+
+[//]: # "Comment"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
