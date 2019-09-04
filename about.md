@@ -53,7 +53,8 @@ M. A. Al- antari, M. A. Al-masni, M. Metwally, D. Hussain, E. Valarezo, **P. Riv
 
 #### 2016
 
-***"Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"***
+***"Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"*** 
+
 Arcentales A, **Rivera P**, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.
 [paper](https://ieeexplore.ieee.org/document/7591287/)
 
