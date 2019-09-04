@@ -14,7 +14,7 @@ I am from Ecuador. I have a Electronics B.S. and currently studing in [KHU](http
 ---
 ### Publications
 
-#### 2019
+#### * 2019
 
 ![alt text][logo] ***"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view."***
 
