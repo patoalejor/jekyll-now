@@ -9,7 +9,7 @@ Graduate student in Korea!
 ---
 ### Bio
 
-I am from Ecuador. I have a Electronics B.S. and currently studing in [KHU](http://bioimage.khu.ac.kr/new/) a PhD in Biomedical Engineering. Working in the lab of Professor [Tae-Seong Kim](http://web.khu.ac.kr/~tskim/) using deep learning techniques. 
+Born in Ecuador and living in Korea. I am studing in [KHU](http://bioimage.khu.ac.kr/new/), my research interest are deep learning for shape reconstruction and reinforcement learning for robotics hand. I train hapkido and judo. I enjoy try new food.  
 
 ---
 ### Publications
