@@ -26,189 +26,190 @@
 
 <body id="top">
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+        <div class="container">
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <!-- <span class="icon-bar"></span> -->
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://github.com/patoalejor/patoalejor.github.io">Patricio Rivera</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!-- <span class="icon-bar"></span> -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/patoalejor/patoalejor.github.io">Patricio Rivera</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="nav-item"><a href="#top">Home</a></li>
+                    <li class="nav-item"><a href="#publications">Publications</a></li>
+
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+
+
+    <span id="homepage" style="display: none"></span>
+
+    <section id="bio" class="home-section">
+        <div class="container">
+            <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <div class="col-xs-12 col-md-4">
+                    <div id="profile">
+                        <div class="portrait" itemprop="image" style="background-image: url('img/portrait.png');"></div>
+                        <div class="portrait-title">
+                            <h2 itemprop="name">Patricio Rivera</h2>
+                            <h3 itemprop="jobTitle">PhD Student in Biomedical Engineering</h3>
+                            <h3 itemprop="worksFor">Kyung Hee University &amp; Bioimaging Lab</h3>
+                        </div>
+
+                        <!-- <ul class="social-icon"> -->
+                            
+                            <!-- <li>
+                                <a href="mailto:patoalejor@khu.ac.kr">
+                                    <i class="fa fa-envelope big-icon" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://scholar.google.com/citations?user=ImDUr_wAAAAJ&amp;hl=en&amp;authuser=1">
+                                    <i class="ai ai-google-scholar big-icon" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="//github.com/patoalejor">
+                                    <img src="img/github.ico">
+                                    <i class="fa fa-github big-icon" aria-hidden="true"></i>
+                                </a>
+                            </li> -->
+                            
+                        <!-- </ul> -->
+
+                    </div>
+                </div>
+
+                <div class="visible-sm visible-xs"></div>
+
+                <div class="col-xs-12 col-md-8" itemprop="description">
+
+                    <h1 id="about">About</h1>
+
+                    <p>Welcome to my homepage! My name is Patricio Rivera. I am a fourth-year PhD student in the 
+                        Department of Biomedical Engineering <a href="http://bme.khu.ac.kr/eng/index.html">(생체의공학과)</a> 
+                        at Kyung Hee University <a href="https://www.khu.ac.kr/eng/main/index.do">(경희대학교)</a>, 
+                        affiliated with Bio Imaging Laboratory <a href="http://bioimage.khu.ac.kr/new/">(바이오영상연구실)</a> at KHU. 
+                        I am advised by Professor <a href="http://web.khu.ac.kr/~tskim/">Tae-Seong Kim</a>. 
+                        My research is focused on deep neural models and applying them to re-create images from depth sensors that
+                        helps anthropomorphic robotics hands solve real world problems.</p>
+
+                    <p>My research has been supported by KHU President Scholarship (2019)</a>.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    ***"A single wearable IMU-based Human Hand Activity Recognition via Deep Autoencoder and Recurrent Neural Networks"***<br/>
+    **P. Rivera**, E. Valarezo, S.M. Lee, K.M. Byun, M.H. Cho, S.Y. Lee, T.-S. Kim <br/>
+    [paper](http://www.ijpmbs.com/uploadfile/2017/1227/20171227050020234.pdf)<br/>
+
+
+    ***"Smoking Activity Recognition Using a Single Wrist IMU and Deep Learning Light"***<br/>
+    E. Valarezo, **P. Rivera**, S. Lee, K. Buyn, T.-S. Kim <br/>
+    [paper](https://dl.acm.org/citation.cfm?id=3193028)<br/>
+
+
+    * **2017**
+
+    ***"Recognition of Human Hand Activities Based on a Single Wrist IMU Using Recurrent Neural Networks"***<br/>
+    **Patricio Rivera**, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br/>
+    [paper](http://www.ijpmbs.com/index.php?m=content&c=index&a=show&catid=144&id=252)<br/>
+
+
+    ***"Human Activity Recognition Using Single Wrist IMU Sensor via Deep Learning Convolutional and Recurrent Neural Nets"***<br/>
+    E. Valarezo,  **P. Rivera**, J. M. Park, G. Gi, T. Y. Kim, M. A. Al-antari, M. Al-masani, T. S. Kim.<br/>
+    [paper](http://www.tafpublications.com/gip_content/paper/JITDETS-1.1.1.pdf)<br/>
+
+
+    ***"Detection and Classification of the Breast Abnormalities in Digital Mammograms via Regional Convolutional Neural Network"***<br/>
+    M. A. Al-masani, M. A. Al-antari, J. M. Park, G. Gi, T. Y. Kim, **P. Rivera**, E. Valarezo, S.-M. Han, T.-S. Kim.<br/>
+    [paper](https://ieeexplore.ieee.org/document/8037053)<br/>
+
+
+    ***"Non-Local Means Filter Denoising for DEXA Image"***<br/>
+    M. A. Al- antari, M. A. Al-masni, M. Metwally, D. Hussain, E. Valarezo, **P. Rivera**, G. Gi, J. M. Park, T. Y. Kim, S.-J. Park, J.-S. Shin, S.-M. Han, T.-S. Kim.<br/>
+    [paper](https://ieeexplore.ieee.org/document/8036889/)<br/>
+
+    * **2016**
+
+    ***"Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"*** <br/>
+    Arcentales A, **Rivera P**, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.<br/>
+    [paper](https://ieeexplore.ieee.org/document/7591287/)<br/> -->
+
+
+
+
+
+    <section id="publications" class="home-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 section-heading"  align="center">
+                    <h1>Publications</h1>
+                </div>
+
+                <div class="col-xs-12 col-md-12">
+                <br /> 
+                    
+                <ul class="fa-ul">
+                    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+                </ul>
+
+                <div class="row">
                 
-                <li class="nav-item"><a href="#top">Home</a></li>
-                <li class="nav-item"><a href="#publications">Publications</a></li>
+                <div class="col-xs-12 col-md-3">
+                    <a href="publication/tricnn/paper.html">
+                        <img src="publication/tricnn/tricnn.png" class="pub-banner" itemprop="image" style="max-height: 130px">
+                    </a>
+                </div>
 
-            </ul>
-        </div>
-    </div>
-</nav>
+                <div class="col-xs-12 col-md-9">
+                
+                    <h3 class="article-title" itemprop="name">
+                        <a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2019.0532?originator=ietauthorOffprint&identity=489848&timestamp=20200801150531&signature=556b16a4370d8e2d9a825c80c502c005&tinyUrl=http://ietdl.org/t/WRJnPb" itemprop="url">Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view</a>
+                    </h3>
 
-
-
-<span id="homepage" style="display: none"></span>
-
-<section id="bio" class="home-section">
-    <div class="container">
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <div class="col-xs-12 col-md-4">
-                <div id="profile">
-                    <div class="portrait" itemprop="image" style="background-image: url('img/portrait.png');"></div>
-                    <div class="portrait-title">
-                        <h2 itemprop="name">Patricio Rivera</h2>
-                        <h3 itemprop="jobTitle">PhD Student in Biomedical Engineering</h3>
-                        <h3 itemprop="worksFor">Kyung Hee University &amp; Bioimaging Lab</h3>
+                    <div class="pub-authors" itemprop="author">
+                        <b>Patricio Rivera</b>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim
                     </div>
 
-                    <!-- <ul class="social-icon"> -->
+                    <div class="pub-publication">
+                        IET Image Processing 2019 
+                    </div>
+
+                    <div class="pub-links">
                         
-                        <!-- <li>
-                            <a href="mailto:patoalejor@khu.ac.kr">
-                                <i class="fa fa-envelope big-icon" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://scholar.google.com/citations?user=ImDUr_wAAAAJ&amp;hl=en&amp;authuser=1">
-                                <i class="ai ai-google-scholar big-icon" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="//github.com/patoalejor">
-                                <img src="img/github.ico">
-                                <i class="fa fa-github big-icon" aria-hidden="true"></i>
-                            </a>
-                        </li> -->
-                        
-                    <!-- </ul> -->
+                        <a class="btn btn-primary btn-outline btn-xs" href="publication/tricnn/paper.html">Details</a>
+                        <a class="btn btn-primary btn-outline btn-xs" href="#">PDF</a>
+                        <a class="btn btn-primary btn-outline btn-xs" href="#">Code</a>
+                        <a class="btn btn-primary btn-outline btn-xs" href="publication/tricnn/tricnn.bib">BibTex</a>
+
+
+                    </div>
 
                 </div>
-            </div>
-
-            <div class="visible-sm visible-xs"></div>
-
-            <div class="col-xs-12 col-md-8" itemprop="description">
-
-                <h1 id="about">About</h1>
-
-                <p>Welcome to my homepage! My name is Patricio Rivera. I am a fourth-year PhD student in the 
-                    Department of Biomedical Engineering <a href="http://bme.khu.ac.kr/eng/index.html">(생체의공학과)</a> 
-                    at Kyung Hee University <a href="https://www.khu.ac.kr/eng/main/index.do">(경희대학교)</a>, 
-                    affiliated with Bio Imaging Laboratory <a href="http://bioimage.khu.ac.kr/new/">(바이오영상연구실)</a> at KHU. 
-                    I am advised by Professor <a href="http://web.khu.ac.kr/~tskim/">Tae-Seong Kim</a>. 
-                    My research is focused on deep neural models and applying them to re-create images from depth sensors that
-                    helps anthropomorphic robotics hands solve real world problems.</p>
-
-                <p>My research has been supported by KHU President Scholarship (2019)</a>.</p>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- 
-***"A single wearable IMU-based Human Hand Activity Recognition via Deep Autoencoder and Recurrent Neural Networks"***<br/>
-**P. Rivera**, E. Valarezo, S.M. Lee, K.M. Byun, M.H. Cho, S.Y. Lee, T.-S. Kim <br/>
-[paper](http://www.ijpmbs.com/uploadfile/2017/1227/20171227050020234.pdf)<br/>
-
-
-***"Smoking Activity Recognition Using a Single Wrist IMU and Deep Learning Light"***<br/>
-E. Valarezo, **P. Rivera**, S. Lee, K. Buyn, T.-S. Kim <br/>
-[paper](https://dl.acm.org/citation.cfm?id=3193028)<br/>
-
-
-* **2017**
-
-***"Recognition of Human Hand Activities Based on a Single Wrist IMU Using Recurrent Neural Networks"***<br/>
-**Patricio Rivera**, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br/>
-[paper](http://www.ijpmbs.com/index.php?m=content&c=index&a=show&catid=144&id=252)<br/>
-
-
-***"Human Activity Recognition Using Single Wrist IMU Sensor via Deep Learning Convolutional and Recurrent Neural Nets"***<br/>
-E. Valarezo,  **P. Rivera**, J. M. Park, G. Gi, T. Y. Kim, M. A. Al-antari, M. Al-masani, T. S. Kim.<br/>
-[paper](http://www.tafpublications.com/gip_content/paper/JITDETS-1.1.1.pdf)<br/>
-
-
-***"Detection and Classification of the Breast Abnormalities in Digital Mammograms via Regional Convolutional Neural Network"***<br/>
-M. A. Al-masani, M. A. Al-antari, J. M. Park, G. Gi, T. Y. Kim, **P. Rivera**, E. Valarezo, S.-M. Han, T.-S. Kim.<br/>
-[paper](https://ieeexplore.ieee.org/document/8037053)<br/>
-
-
-***"Non-Local Means Filter Denoising for DEXA Image"***<br/>
-M. A. Al- antari, M. A. Al-masni, M. Metwally, D. Hussain, E. Valarezo, **P. Rivera**, G. Gi, J. M. Park, T. Y. Kim, S.-J. Park, J.-S. Shin, S.-M. Han, T.-S. Kim.<br/>
-[paper](https://ieeexplore.ieee.org/document/8036889/)<br/>
-
-* **2016**
-
-***"Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"*** <br/>
-Arcentales A, **Rivera P**, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.<br/>
-[paper](https://ieeexplore.ieee.org/document/7591287/)<br/> -->
-
-
-
-
-
-<section id="publications" class="home-section">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12 section-heading"  align="center">
-                <h1>Publications</h1>
-            </div>
-
-            <div class="col-xs-12 col-md-12">
-            <br /> 
-                
-            <ul class="fa-ul">
-                <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-            </ul>
-
-            <div class="row">
-            
-            <div class="col-xs-12 col-md-3">
-                <a href="publication/tricnn/paper.html">
-                    <img src="publication/tricnn/tricnn.png" class="pub-banner" itemprop="image" style="max-height: 130px">
-                </a>
-            </div>
-
-            <div class="col-xs-12 col-md-9">
-            
-                <h3 class="article-title" itemprop="name">
-                    <a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2019.0532?originator=ietauthorOffprint&identity=489848&timestamp=20200801150531&signature=556b16a4370d8e2d9a825c80c502c005&tinyUrl=http://ietdl.org/t/WRJnPb" itemprop="url">Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view</a>
-                </h3>
-
-                <div class="pub-authors" itemprop="author">
-                    <b>Patricio Rivera</b>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim
                 </div>
-
-                <div class="pub-publication">
-                    IET Image Processing 2019 
-                </div>
-
-                <div class="pub-links">
-                    
-                    <a class="btn btn-primary btn-outline btn-xs" href="publication/tricnn/paper.html">Details</a>
-                    <a class="btn btn-primary btn-outline btn-xs" href="#">PDF</a>
-                    <a class="btn btn-primary btn-outline btn-xs" href="#">Code</a>
-                    <a class="btn btn-primary btn-outline btn-xs" href="publication/tricnn/tricnn.bib">BibTex</a>
-
-
-                </div>
-
             </div>
             </div>
         </div>
-        </div>
-    </div>
 
-    <li>Also see my <a href="https://scholar.google.com/citations?user=ImDUr_wAAAAJ&hl=en&authuser=1">Google Scholar</a>.</li>
+        <li>Also see my <a href="https://scholar.google.com/citations?user=ImDUr_wAAAAJ&hl=en&authuser=1">Google Scholar</a>.</li>
 
-</section>
+    </section>
+</body>
