@@ -3,7 +3,7 @@
 <title>Pato</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/myStyle.css">
+<link rel="stylesheet" href="../../css/myStyle.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -28,71 +28,36 @@ h1, h2, h3, h4, h5, h6 {
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;max-height:800px;" id="home">
-  
-   <!-- <img class="w3-col l4 w3-image we-round w3-move-90" src="img/banner.jpg" alt="My flower pot in fall" width="100" height="100">
-   <img class="w3-col m4 w3-image we-round w3-move-90" src="img/flower.jpg" alt="The first flower in winter" width="100" height="100">
-   <img class="w3-col s4 w3-image we-round w3-move-90" src="img/sun.jpg" alt="Sunset after hard work" width="100" height="100"> -->
-  <!-- <img class="w3-image w3-round" src="img/flower.jpg" alt="A small pinky beauty" width="400" height="300"> -->
+  <img class="w3-image w3-round" src="imagen-general-tricnn.jpg" alt="General Figure Paper" width="1600" height="800">
 </header>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
 
-  <!-- About Section -->
+  <!-- Abstract Section -->
   <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="img/pato.jpg" class="w3-round-xxlarge w3-image w3-opacity-min w3-move-90" alt="My Image" width="600" height="750">
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Me</h1><br>
-      <h5 class="w3-center">Patricio Rivera</h5>
-      <p class="w3-large">
-        Welcome to my homepage! I am a fourth-year PhD student in the 
-        Department of Biomedical Engineering <a href="http://bme.khu.ac.kr/eng/index.html">(생체의공학과)</a> 
-        at Kyung Hee University <a href="https://www.khu.ac.kr/eng/main/index.do">(경희대학교)</a>, 
-        affiliated with Bio Imaging Laboratory <a href="http://bioimage.khu.ac.kr/new/">(바이오영상연구실)</a> at KHU. 
-        I am advised by Professor <a href="http://web.khu.ac.kr/~tskim/">Tae-Seong Kim</a>. 
-        My research is focused on deep neural models and applying them to re-create images from depth sensors that
-        helps anthropomorphic robotics hands solve real world problems.</p>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-64" id="publications">
-      <h1 class="w3-center">Publications</h1><br>
-      
-      <div class="w3-col l6 w3-padding-small">
-         <h4>"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view"</h4>
-         <p class="w3-text-grey">
-            <strong>Patricio Rivera</strong>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br>
-            IET Image Processing 2019
-         </p>
-      </div>
-
-      <div class="w3-col l6 w3-padding-small">
-         <img class="w3-image we-round" src="post/TriCNN/imagen_general_tricnn.jpg" alt="General Figure TriCNN" width="1600" height="800"> 
-         <div class="w3-center">
-            <a href="#" class="w3-button-link">Details</a>
-            <a href="#" class="w3-button-link">PDF</a>
-            <a href="#" class="w3-button-link">BibTex</a>
-         </div>
-      </div>
-  </div>
-
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1 class="w3-center">Contact</h1><br>
-    <p>If you have a question feel free to send me a message. I will response as soon as possible. Do not hesitate to contact me.<br>
-    <span class="w3-text-blue-grey w3-large"><b>Bio Imaging Laboratory, KHU, 17104 Yongin-KR</b></span><br>
-    You can also contact by Kakao id <span class="w3-text-deep-purple"><b>patoalejor</b></span> or email <span class="w3-text-deep-purple"><b>patoalejor@gmail.com</b></span>
-   </p>
     
-  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Abstract</h1><br>
+      <p class="w3-large">
+          n this study, the authors propose a novel three-dimensional (3D) convolutional neural network for shape 
+          reconstruction via a trilateral convolutional neural network (Tri-CNN) from a single depth view. 
+          The proposed approach produces a 3D voxel representation of an object, derived from a partial object surface 
+          in a single depth image. The proposed Tri-CNN combines three dilated convolutions in 3D to expand the convolutional 
+          receptive field more efficiently to learn shape reconstructions. To evaluate the proposed Tri-CNN in terms of 
+          reconstruction performance, the publicly available ShapeNet and Big Data for Grasp Planning data sets are utilised.
+          The reconstruction performance was evaluated against four conventional deep learning approaches: namely, fully connected
+          convolutional neural network, baseline CNN, autoencoder CNN, and a generative adversarial reconstruction network. The 
+          proposed experimental results show that Tri-CNN produces superior reconstruction results in terms of intersection 
+          over union values and Brier scores with significantly less number of model parameters and memory.</p>
+    </div>
+  </div>
+
+  <div class="w3-col m6 w3-padding-large w3-button">
+    <a href="../../index.html">Go Back</a>
+  </div>
+
+  <hr>
 <!-- End page content -->
 </div>
 
