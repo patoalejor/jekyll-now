@@ -29,7 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;max-height:800px;" id="home">
   <br><br><br>
-  <h1 class="w3-center w3-padding-large w3-margin">Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view</h1>
+  <h1 class="w3-center w3-padding-large w3-margin">
+      An Integrated ARMA-based Deep Autoencoder and GRU Classifier System for Enhanced Recognition of Daily Hand Activities
+  </h1>
 </header>
 
 <!-- Page content -->
@@ -38,19 +40,20 @@ h1, h2, h3, h4, h5, h6 {
   <!-- Abstract Section -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col s12 w3-center w3-padding-large">
-      <img class="w3-image w3-round" src="imagen-general-tricnn.jpg" alt="General Figure Paper" width="1600" height="800">
+      <img class="w3-image w3-round" src="imagen-general-ae-har.jpg" alt="General Figure Paper" width="1600" height="800">
       <h1>Abstract</h1><br>
       <p class="w3-large">
-          In this study, the authors propose a novel three-dimensional (3D) convolutional neural network for shape 
-          reconstruction via a trilateral convolutional neural network (Tri-CNN) from a single depth view. 
-          The proposed approach produces a 3D voxel representation of an object, derived from a partial object surface 
-          in a single depth image. The proposed Tri-CNN combines three dilated convolutions in 3D to expand the convolutional 
-          receptive field more efficiently to learn shape reconstructions. To evaluate the proposed Tri-CNN in terms of 
-          reconstruction performance, the publicly available ShapeNet and Big Data for Grasp Planning data sets are utilised.
-          The reconstruction performance was evaluated against four conventional deep learning approaches: namely, fully connected
-          convolutional neural network, baseline CNN, autoencoder CNN, and a generative adversarial reconstruction network. The 
-          proposed experimental results show that Tri-CNN produces superior reconstruction results in terms of intersection 
-          over union values and Brier scores with significantly less number of model parameters and memory.</p>
+          Recognition of hand Activities of Daily Living (hand-ADL) is useful in human-computer interactions, lifelogging
+          and healthcare applications. However, developmenting a reliable human hand activity recognition (HAR) system with
+          only on a single wearable sensor is still a challenge from due to hand movements that are transient and sporadic.
+          Approaches based on deep learning methodologies that learn how to extract
+          features directly from raw data are becoming more suitable for implementing such HAR systems. In this work, we present an
+          ARMA-based deep autoencoder and deep Gated Recurrent Unit (GRU) networks for hand-ADL based on a single wearable
+          sensor The ARMA-based autoencoder improves raw time-series signals of hand activities, such that better representation of
+          human hand activities can be made. Then GRU recognizes seven hand ADLs
+          utilizing the output of the autoencoder: namely, Open Door, Close Door, Open Refrigerator, Close Refrigerator, Open Drawer,
+          Close Drawer, and Drink from Cup. The proposed HAR methodologies improve recognition accuracy by 4% to 16% against
+          various conventional deep models.</p>
     </div>
   </div>
 
