@@ -10,181 +10,237 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('img/flower2.jpg');
+  min-height: 100vh;
+  min-width: 100%;
+  {% comment %} transform: rotate(90deg); {% endcomment %}
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("img/banner.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("img/pato.jpg");
+  min-height: 400px;
+  min-width: 100%;
+}
+
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
     <a href="#home" class="w3-bar-item w3-button">Patricio Rivera</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-      <a href="#conferences" class="w3-bar-item w3-button">Conferences</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Publications</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Projects</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#publications" class="w3-bar-item w3-button" onclick="toggleFunction()">Publications</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;max-height:800px;" id="home">
-   <!-- <img class="w3-col l4 w3-image we-round w3-move-90" src="img/banner.jpg" alt="My flower pot in fall" width="100" height="100">
-   <img class="w3-col m4 w3-image we-round w3-move-90" src="img/flower.jpg" alt="The first flower in winter" width="100" height="100">
-   <img class="w3-col s4 w3-image we-round w3-move-90" src="img/sun.jpg" alt="Sunset after hard work" width="100" height="100"> -->
-  <img class="w3-image w3-round w3-move-90" src="img/flower.jpg" alt="A small pinky beauty" width="1600" height="800">
-</header>
+<div class="bgimg-1 w3-content w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> Pato Website</span>
+  </div>
+</div>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-      <img src="img/pato.jpg" class="w3-round-xxlarge w3-image w3-opacity-min w3-move-90" alt="My Image" width="600" height="750">
-    </div>
+<div class="w3-content">
+   <!-- About Section -->
+   <div class="w3-row w3-center w3-padding-64" id="about">
+      <h1>About Me</h1><br>
+      <h5>Patricio Rivera</h5><br>
+      <p class="w3-col s2">
+      <p class="w3-large w3-col s8">
+         I am a fourth-year PhD student at the 
+         Department of Biomedical Engineering <a href="http://bme.khu.ac.kr/eng/index.html" class="w3-hover-text-green">(생체의공학과)</a> 
+         in Kyung Hee University <a href="https://www.khu.ac.kr/eng/main/index.do" class="w3-hover-text-green">(경희대학교)</a>. 
+         My lab, Bio Imaging Laboratory <a href="http://bioimage.khu.ac.kr/new/" class="w3-hover-text-green">(바이오영상연구실)</a>,
+         studies human motion and action recognition technology using multi-modal sensors and extended intelligence.  
+         I am advised by Professor <a href="http://web.khu.ac.kr/~tskim/" class="w3-hover-text-green">Tae-Seong Kim</a>. <br>
 
-    <div class="w3-col m6 w3-padding-large w3-">
-      <h1 class="w3-center">About Me</h1><br>
-      <h5 class="w3-center">Patricio Rivera</h5>
-      <p class="w3-large">
-        Welcome to my homepage! I am a fourth-year PhD student in the 
-        Department of Biomedical Engineering <a href="http://bme.khu.ac.kr/eng/index.html" class="w3-hover-text-green">(생체의공학과)</a> 
-        at Kyung Hee University <a href="https://www.khu.ac.kr/eng/main/index.do" class="w3-hover-text-green">(경희대학교)</a>, 
-        affiliated with Bio Imaging Laboratory <a href="http://bioimage.khu.ac.kr/new/" class="w3-hover-text-green">(바이오영상연구실)</a> at KHU. 
-        I am advised by Professor <a href="http://web.khu.ac.kr/~tskim/" class="w3-hover-text-green">Tae-Seong Kim</a>. 
-        My research is focused on deep neural models and applying them to re-create images from depth sensors that
-        helps anthropomorphic robotics hands solve real world problems.</p>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-large" id="publications">
-      <h1 class="w3-center">Publications</h1><br>
+         <a href="https://scholar.google.com/citations?hl=en&user=ImDUr_wAAAAJ" class="w3-button-link">Google Scholar</a>
+         <a href="https://github.com/patoalejor" class="w3-button-link">Github</a>
+         <a href="https://twitter.com/Pato_ARL" class="w3-button-link">Twitter</a>
+         
+      </p>
+      <p class="w3-col s2">
+   </div>
 
-      <div class="w3-row">
-         <div class="w3-col l6 w3-padding-small  w3-left-align">
-            <h4>"Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view"</h4>
-            <p class="w3-text-grey">
-               <strong>Patricio Rivera</strong>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br>
-               IET Image Processing, 2019
-            </p>
-         </div>
+   <hr>
 
-         <div class="w3-col l6 w3-padding-small">
-            <img class="w3-image we-round" src="post/TriCNN/imagen-general-tricnn.jpg" alt="General Figure TriCNN" width="1600" height="800"> 
-            <div class="w3-center">
+   <div class="w3-row w3-left-align w3-padding-small" id="publications">
+      <h3 class="w3-text-deep-orange"> Publications</h3><br>
+
+      <div class='w3-row'>
+         <div class="w3-col l10 ">
+            <p class="w3-large w3-text-dark-grey">
+               "Trilateral convolutional neural network for 3D shape reconstruction of objects from a single depth view"<br>
+               <span class="w3-text-grey"> 
+                  <strong>Patricio Rivera</strong>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br> 
+                  IET Image Processing, 2019
+               </span> <br>
                <a href="post/TriCNN/pagina-tricnn.html" class="w3-button-link">Details</a>
                <a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2019.0532" class="w3-button-link">PDF</a>
                <a href="post/TriCNN/bibtex-tricnn.bib" class="w3-button-link">BibTex</a>
-            </div>
+            </p>
          </div>
       </div>
 
       <div class="w3-row">
-         <div class="w3-col l6 w3-padding-small w3-left-align">
-            <h4>"An Integrated ARMA-based Deep Autoencoder and GRU Classifier System for Enhanced Recognition of Daily Hand Activities"</h4>
-            <p class="w3-text-grey">
-               <strong>Patricio Rivera</strong>, Edwin Valarezo, Tae-Seong Kim<br>
-               In review
+         <div class="w3-col l12">
+            <p class="w3-large  w3-text-dark-grey">
+               "An Integrated ARMA-based Deep Autoencoder and GRU Classifier System for Enhanced Recognition of Daily Hand Activities"<br>
+               <span class="w3-text-grey"> 
+                  <strong>Patricio Rivera</strong>, Edwin Valarezo, Tae-Seong Kim<br>  
+                  In review
+               </span> <br>
             </p>
          </div>
-         <div class="w3-col l6 w3-padding-small w3-center">
-            <img class="w3-image we-round w3-move-90" src="img/sun.jpg" alt="General Figure AE-HAR" width="200" height="50"> 
-            <div class="w3-center">
-               <a href="post/AE-HAR/pagina-ae-har.html" class="w3-button-link">Details</a>
-               <a href="#" class="w3-button-link">PDF</a>
-               <a href="#" class="w3-button-link">BibTex</a>
-            </div>
-         </div>
-      </div>
+      </div>    
 
-  </div>
-
-  <hr>
-
-  <div class="w3-row w3-padding-large " style="max-width:1100px" id="conferences">
-      <h1 class="w3-center">Conferences</h1>
-
-      <div class="w3-col w3-center s12 w3-padding-large w3-margin">
-         <h4>
-            "Human-like Object Grasping and Relocation for an Anthropomorphic Robotic Hand with Natural Hand Pose Priors in Deep Reinforcement Learning"
-         </h4>
-         <p class="w3-text-grey">
-            Edwin Valarezo, <strong>Patricio Rivera</strong>, Hyemin Park, Nahyeon Park, Jiheon Oh, Sangmin Lee, Kyungmin Byun, and Tae-Seong Kim<br>
-            The 2nd Industrial Conference on Robotics and Computer Vision, 2019
+      <div class="w3-col l12">
+         <p class="w3-large  w3-text-dark-grey">
+            "Human-like Object Grasping and Relocation for an Anthropomorphic Robotic Hand with Natural Hand Pose Priors in Deep Reinforcement Learning"<br>
+            <span class="w3-text-grey">
+               Edwin Valarezo, <strong>Patricio Rivera</strong>, Hyemin Park, Nahyeon Park, Jiheon Oh, Sangmin Lee, Kyungmin Byun, and Tae-Seong Kim<br>
+               The 2nd Industrial Conference on Robotics and Computer Vision, 2019
+            </span> <br>
+            <a href="#" class="w3-button-link">PDF</a>
+            <a href="#" class="w3-button-link">BibTex</a>
          </p>
-         <a href="#" class="w3-button-link">PDF</a>
-         <a href="#" class="w3-button-link">BibTex</a>
       </div>
 
-      <div class="w3-col w3-center s12 w3-padding-large w3-margin">
-         <h4>
-            "Recognition of Human Hand Activities Based on a Single Wrist IMU Using Recurrent Neural Networks"
-         </h4>
-         <p class="w3-text-grey">
-            <strong>Patricio Rivera </strong>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br>
-            International Journal of Pharma Medicine and Biological Sciences, 2018
+      <div class="w3-col l12">
+         <p class="w3-large  w3-text-dark-grey">
+            "Recognition of Human Hand Activities Based on a Single Wrist IMU Using Recurrent Neural Networks"<br>
+            <span class="w3-text-grey">
+               <strong>Patricio Rivera </strong>, Edwin Valarezo, Mun-Taek Choi, Tae-Seong Kim<br>
+               International Journal of Pharma Medicine and Biological Sciences, 2018
+            </span><br>
+            <a href="http://www.ijpmbs.com/index.php?m=content&c=index&a=show&catid=144&id=252" class="w3-button-link">PDF</a>
+            <a href="post/har-rnn/bibtex-har-rnn.bib" class="w3-button-link">BibTex</a>
          </p>
-         <a href="http://www.ijpmbs.com/index.php?m=content&c=index&a=show&catid=144&id=252" class="w3-button-link">PDF</a>
-         <a href="post/har-rnn/bibtex-har-rnn.bib" class="w3-button-link">BibTex</a>
       </div>
 
-      <div class="w3-col w3-center s12 w3-padding-large w3-margin">
-         <h4>
-            "Smoking Activity Recognition Using a Single Wrist IMU and Deep Learning Light"
-         </h4>
-         <p class="w3-text-grey"> 
-            E. Valarezo, <strong>P. Rivera </strong>, S. Lee, K. Buyn, T.-S. Kim<br>
-            ICDSP, Proceedings of the 2nd International Conference on Digital Signal Processing, 2018
+      <div class="w3-col l12 w3-padding-small">
+         <p class="w3-large  w3-text-dark-grey">
+            "Smoking Activity Recognition Using a Single Wrist IMU and Deep Learning Light"<br>
+            <span class="w3-text-grey"> 
+               E. Valarezo, <strong>P. Rivera </strong>, S. Lee, K. Buyn, T.-S. Kim<br>
+               ICDSP, Proceedings of the 2nd International Conference on Digital Signal Processing, 2018
+            </span><br>
+            <a href="https://dl.acm.org/citation.cfm?id=3193028" class="w3-button-link">PDF</a>
+            <a href="post/har-rnn/bibtex-smoking.bib" class="w3-button-link">BibTex</a>
          </p>
-         <a href="https://dl.acm.org/citation.cfm?id=3193028" class="w3-button-link">PDF</a>
-         <a href="post/har-rnn/bibtex-smoking.bib" class="w3-button-link">BibTex</a>
       </div>
 
-      <div class="w3-col w3-center s12 w3-padding-large w3-margin">
-         <h4>
-            "Human Activity Recognition Using Single Wrist IMU Sensor via Deep Learning Convolutional and Recurrent Neural Nets"
-         </h4>
-         <p class="w3-text-grey">
-            E. Valarezo,  <strong>P. Rivera</strong>, J. M. Park, G. Gi, T. Y. Kim, M. A. Al-antari, M. Al-masani, T. S. Kim.<br>
-            Journal of ICT, Design, Engineering and Technological Science, 2017
+      <div class="w3-col l12 w3-padding-small">
+         <p class="w3-large  w3-text-dark-grey">
+            "Human Activity Recognition Using Single Wrist IMU Sensor via Deep Learning Convolutional and Recurrent Neural Nets"<br>
+            <span class="w3-text-grey">
+               E. Valarezo,  <strong>P. Rivera</strong>, J. M. Park, G. Gi, T. Y. Kim, M. A. Al-antari, M. Al-masani, T. S. Kim.<br>
+               Journal of ICT, Design, Engineering and Technological Science, 2017
+            </span><br>
+            <a href="http://www.tafpublications.com/gip_content/paper/JITDETS-1.1.1.pdf" class="w3-button-link">PDF</a>
+            <a href="post/har-rnn/bibtex-activity.bib" class="w3-button-link">BibTex</a>
          </p>
-         <a href="http://www.tafpublications.com/gip_content/paper/JITDETS-1.1.1.pdf" class="w3-button-link">PDF</a>
-         <a href="post/har-rnn/bibtex-activity.bib" class="w3-button-link">BibTex</a>
       </div>
 
-      <div class="w3-col w3-center s12 w3-padding-large w3-margin">
-         <h4>
-            "Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"
-         </h4>
-         <p class="w3-text-grey">
-            Arcentales A, <strong> Rivera P</strong>, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.<br>
-            38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2016
+      <div class="w3-col l12 w3-padding-small">
+         <p class="w3-large  w3-text-dark-grey">
+            "Analysis of blood pressure signal in patients with different ventricular ejection fraction using linear and non-linear methods"<br>
+            <span class="w3-text-grey">
+               Arcentales A, <strong> Rivera P</strong>, Caminal P, Voss A, Bayes-Genis A, Giraldo BF.<br>
+               38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2016
+            </span> <br>
+            <a href="https://ieeexplore.ieee.org/document/7591287/" class="w3-button-link">PDF</a>
+            <a href="post/har-rnn/bibtex-blood.bib" class="w3-button-link">BibTex</a>
          </p>
-         <a href="https://ieeexplore.ieee.org/document/7591287/" class="w3-button-link">PDF</a>
-         <a href="post/har-rnn/bibtex-blood.bib" class="w3-button-link">BibTex</a>
       </div>
-  </div>
 
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64 w3-center" id="contact">
-    <h1>Contact</h1><br>
-    <p>If you have a question feel free to send me a message. I will response as soon as possible<br>
-    <span class="w3-text-blue-grey w3-large"><b>Bio Imaging Laboratory, KHU, 17104 Yongin-KR</b></span><br>
-    You can also contact by Kakao id <span class="w3-text-deep-purple"><b>patoalejor</b></span> or email <span class="w3-text-deep-purple"><b>patoalejor@gmail.com</b></span>
-   </p>
-    
+   </div>
+</div>
   
-<!-- End page content -->
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min"></div>
+
+
+<div class="w3-content">
+   <div class="w3-row w3-left-align w3-padding-small" id="projects">
+      <h3 class="w3-text-deep-orange"> Projects</h3><br>
+   </div>
+
+   <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/sun.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/sun.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="img/sun.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- Footer -->
-<footer class="w3-right-align w3-light-grey w3-padding-small">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-right-align w3-light-grey w3-padding-small" id="contact">
+   <!-- Contact Section -->
+   <div class="w3-aling-left">
+      <p>
+         kakao: <span class="w3-text-deep-purple"><b>patoalejor</b></span><br> 
+         email: <span class="w3-text-deep-purple"><b>patoalejor@gmail.com</b></span><br>
+         Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+      </p>
+   <!-- End page content -->
+   </div>
+  
 </footer>
 
 </body>
